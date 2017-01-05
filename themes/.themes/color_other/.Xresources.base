@@ -1,0 +1,15 @@
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+rofi.color-enabled: true
+rofi.color-window: #COLOR0, #COLOR1, #COLOR1
+rofi.color-normal: argb:0000000, #COLOR1, argb:0000000, #COLOR1, #1b2b34
+rofi.color-active: argb:0000000, #6699cc, argb:0000000, #6699cc, #1b2b34
+rofi.color-urgent: argb:0000000, #e12a36, argb:0000000, #dd2a4b, #1b2b34
+rofi.font: Envy Code R 10
+rofi.separator-style: none
+rofi.hide-scrollbar: true
+rofi.location: 2
+rofi.width: 640
+rofi.lines: 8
+rofi.yoffset: 26

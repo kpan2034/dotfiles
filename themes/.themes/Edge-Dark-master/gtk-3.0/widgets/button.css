@@ -1,0 +1,367 @@
+/**********
+ * button *
+ **********/
+button {
+    padding: 6px 8px;
+    border-radius:10px;
+    border-width: 0;
+    margin:2px;
+    border-style: solid;
+    border-color: transparent;
+    background-color: /*@base_color*/ rgba (46,53,66,1);
+    background-image: none;
+    color: @text_color;
+    font: bold;
+  transition: box-shadow 0.3s cubic-bezier(0, 0, 0.2, 1);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25), 0 2px 2px rgba(0, 0, 0, 0.22), 0 2px 2px transparent;
+
+    /*-GtkWidget-focus-padding: 1;
+    -GtkWidget-focus-line-width: 0;*/
+}
+
+button.toggle,
+button.radio:not(.image-button){
+background-color:transparent;
+box-shadow: none;
+border-radius: 0px;
+color:alpha(#fff,0.7);
+margin: 0px;
+padding:10px;
+border:none;}
+button.toggle:hover,
+button.radio:hover:not(.image-button){
+color:#fff;
+background-color:transparent;}
+button.toggle:active,
+button.toggle:checked
+{
+    transition: all 0.3s cubic-bezier(0, 0, 0.2, 1), color 0, background-image 0;
+    animation: cica_effect 0.3s cubic-bezier(0, 0, 0.2, 1) forwards; 
+        box-shadow: inset 0 -2px @selected_bg_color;
+background-image: none;
+}
+
+button.flat.toggle.popup{
+border-radius:0px;}
+
+button.flat.toggle.popup box{
+background-color:transparent;}
+
+button.flat.toggle.popup:active{
+background-color:transparent;
+box-shadow:none;}
+
+button.radio:active.text-button{
+background-color: alpha(#fff,0.05);
+    transition: all 0.3s cubic-bezier(0, 0, 0.2, 1), color 0, background-image 0;
+    animation: cica_effect 0.3s cubic-bezier(0, 0, 0.2, 1) forwards; }
+
+/*button.radio:active:not(.image-button),*/
+button.radio:checked:not(.image-button){
+        box-shadow: inset 0 -2px #009688;}
+
+modelbutton box,
+popover modelbuton box{
+background-color:transparent;}
+
+button.radio.text-button:checked{
+background-color: transparent;
+    transition: all 0.3s cubic-bezier(0, 0, 0.2, 1), color 0, background-image 0;
+    animation: cica_effect 0.3s cubic-bezier(0, 0, 0.2, 1) forwards; }
+
+
+button.combo{
+border-radius:2px;
+box-shadow:none;
+}
+
+button.toggle box{
+background-color:transparent;}
+
+button image {
+background-color: transparent;
+}
+
+button label {
+background-color: transparent;
+}
+
+button label {
+background-color: transparent;
+}
+
+button:hover {
+    border-color: transparent;
+    border-top-color: alpha(white,0);
+    border-bottom-color: alpha(black,0);
+    background-color: shade(@selected_bg_color,0.5);
+    color: @selected_fg_color;
+}
+
+button:active,
+button:active:hover {
+    border-color: transparent;
+    border-top-color: alpha(white,0);
+    border-bottom-color: alpha(black,0);
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
+    transition: all 0.3s cubic-bezier(0, 0, 0.2, 1), color 0, background-image 0;
+    animation: ripple_effect 0.3s cubic-bezier(0, 0, 0.2, 1) forwards;
+}
+
+button:checked:checked {
+    background-color: @selected_bg_color;
+    color: #fff;
+}
+
+button:insensitive {
+    background-color: mix(@bg_color,@base_color, 0.5);
+    background-image: none;
+}
+
+/****************
+* "flat" button *
+*****************/
+box.topbar button.radio.image-button {
+background-color: #000;}
+box.topbar{
+background-color: #000}
+
+box.topbar button.radio.image-button:checked{
+box-shadow: inset 0 2px #3F51B5;
+background-color: rgb(15,15,15); }
+
+box.topbar button.radio.image-button:active{
+background-color:rgb(25,25,25);
+animation:none;}
+
+button.flat:not(.radio){
+background-color: alpha(#000,0.05);
+border-radius:100px;}
+
+button.flat(.text-button){
+border-radius: 0px;}
+
+button.popup{
+border-radius: 0px;}
+
+button.flat:hover:not(.radio){
+background-color: alpha(#000,0.08);
+color:#fff;}
+
+button.flat:active:not(.radio){
+background-color: #3F51B5;}
+
+/****************
+* linked button *
+*****************/
+/* middle button */
+.linked .entry,
+.linked .button,
+.linked .button:active,
+.linked .button:active:hover,
+.linked .button:focus,
+.linked .button:focus:active,
+.linked .button:insensitive,
+.linked > GtkComboBox > .button:dir(ltr),
+.linked > GtkComboBox > .button:dir(ltr):focus {
+    border-radius: 0;   
+}
+
+
+/* leftmost button */
+.linked .entry:first-child,
+.linked .button:first-child,
+.linked .button:active:first-child,
+.linked .button:active:hover:first-child,
+.linked .button:focus:first-child,
+.linked .button:focus:active:first-child,
+.linked .button:insensitive:first-child,
+.linked > GtkComboBox:first-child > .button,
+.linked > GtkComboBox:first-child > .button:focus {
+    border-right-width: 0;
+    border-radius: 0px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/* rightmost button */
+.linked .entry:last-child,
+.linked .button:last-child,
+.linked .button:active:last-child,
+.linked .button:active:hover:last-child,
+.linked .button:focus:last-child,
+.linked .button:focus:active:last-child,
+.linked .button:insensitive:last-child,
+.linked > GtkComboBox:last-child > .button,
+.linked > GtkComboBox:last-child > .button:focus {
+    border-left-width: 0;
+    border-radius: 0px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+/* linked single button */
+.linked .entry:only-child,
+.linked .button:only-child,
+.linked .button:active:only-child,
+.linked .button:active:hover:only-child,
+.linked .button:focus:only-child,
+.linked .button:focus:active:only-child,
+.linked .button:insensitive:only-child,
+.linked.vertical > GtkComboBox:only-child > .button,
+.linked.vertical > GtkComboBox:only-child > .button:focus {
+    border-radius: 0px;
+}
+
+/* middle button (vertical) */
+.linked.vertical .entry,
+.linked.vertical .button,
+.linked.vertical .button:active,
+.linked.vertical .button:active:hover,
+.linked.vertical .button:focus,
+.linked.vertical .button:focus:active,
+.linked.vertical .button:insensitive,
+.linked.vertical > GtkComboBox > .button:dir(ltr),
+.linked.vertical > GtkComboBox > .button:dir(ltr):focus {
+    border-bottom-width: 0;
+    border-radius: 0;
+}
+
+/* leftmost button (vertical) */
+.linked.vertical .entry:first-child,
+.linked.vertical .button:first-child,
+.linked.vertical .button:active:first-child,
+.linked.vertical .button:active:hover:first-child,
+.linked.vertical .button:focus:first-child,
+.linked.vertical .button:focus:active:first-child,
+.linked.vertical .button:insensitive:first-child,
+.linked.vertical > GtkComboBox:first-child > .button,
+.linked.vertical > GtkComboBox:first-child > .button:focus {
+    border-bottom-width: 0;
+    border-radius: 0px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* rightmost button (vertical) */
+.linked.vertical .entry:last-child,
+.linked.vertical .button:last-child,
+.linked.vertical .button:active:last-child,
+.linked.vertical .button:active:hover:last-child,
+.linked.vertical .button:focus:last-child,
+.linked.vertical .button:focus:active:last-child,
+.linked.vertical .button:insensitive:last-child,
+.linked.vertical > GtkComboBox:last-child > .button,
+.linked.vertical > GtkComboBox:last-child > .button:focus {
+    border-radius: 0px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+/* linked single button (vertical) */
+.linked.vertical .entry:only-child,
+.linked.vertical .button:only-child,
+.linked.vertical .button:active:only-child,
+.linked.vertical .button:active:hover:only-child,
+.linked.vertical .button:focus:only-child,
+.linked.vertical .button:focus:active:only-child,
+.linked.vertical .button:insensitive:only-child,
+.linked.vertical > GtkComboBox:only-child > .button,
+.linked.vertical > GtkComboBox:only-child > .button:focus {
+    border-radius: 0px;
+}
+
+.linked.vertical .entry:first-child {
+    border: 1px solid alpha(black,0);
+    border-bottom-width: 0px;
+}
+
+.linked.vertical .entry:last-child {
+    border: 1px solid alpha(black,0);
+}
+
+/******************************
+ * destructive action buttons *
+ ******************************/
+.destructive-action.button,
+.titlebar .destructive-action.button {
+    border-color: transparent;
+    border-top-color: alpha(white,0);
+    border-bottom-color: alpha(black,0);
+    background-color: @error_color;
+    color: @selected_fg_color;
+}
+
+.destructive-action.button:hover,
+.titlebar .destructive-action.button:hover{
+    background-color: @error_color;
+    color: @selected_fg_color;
+}
+
+.destructive-action.button:active,
+.titlebar .destructive-action.button:active {
+    background-color: shade(@error_color,0.9);
+    color: @selected_fg_color;
+}
+
+.destructive-action.button:hover:active,
+.titlebar .destructive-action.button:hover:active {
+    background-color: shade(@error_color,0.9);
+    color: @selected_fg_color;
+}
+
+.destructive-action.button:insensitive,
+.titlebar .destructive-action.button:insensitive {
+    background-color: mix(@bg_color,@error,0.6);
+}
+
+/******************************
+ * suggested action buttons *
+ ******************************/
+.suggested-action.button,
+.list .suggested-action.button,
+.titlebar .suggested-action.button {
+    border-color: transparent;
+    border-top-color: alpha(white,0);
+    border-bottom-color: alpha(black,0);
+    background-color: @cyan;
+    color: @selected_fg_color;
+
+}
+
+.suggested-action.button:hover,
+.list .suggested-action.button:hover,
+.titlebar .suggested-action.button:hover{
+    background-color: @cyan;
+    color: @selected_fg_color;
+}
+
+.suggested-action.button:active,
+.list .suggested-action.button:active,
+.titlebar .suggested-action.button:active {
+    background-color: shade(@cyan,0.9);
+    color: @selected_fg_color;
+}
+
+.suggested-action.button:hover:active,
+.list .suggested-action.button:hover:active,
+.titlebar .suggested-action.button:hover:active {
+    background-color: shade(@cyan,0.9);
+    color: @selected_fg_color;
+}
+
+.suggested-action.button:insensitive,
+.titlebar .suggested-action.button:insensitive {
+    background-color: mix(@bg_color,@cyan,0.6);
+}
+
+/********************
+ * circular buttons *
+ ********************/
+.circular-button.button {
+    border: none;
+    border-radius: 20px;
+    outline-radius: 20px;
+    box-shadow: inset 0px -1px 0px 0px rgba(0,0,0,0.2),inset 0px 1px 0px 0px rgba(255,255,255,0.2);
+}
