@@ -34,11 +34,11 @@ h3 {
 a, a:visited {
   display: block;
   padding-top: 2px;
-  color: #2aa198;
+  color: #8e98a0;
   font-weight: bold;
   text-decoration: none;
 }
-a:hover { color: #a09077; }
+a:hover { color: #9b9ca0; }
 
 /* -------------------------------------------------------------------
   COLOURS
@@ -50,7 +50,7 @@ a:hover { color: #a09077; }
 .magenta  { color: #a09077; }
 .orange   { color: #e2b271; }
 .red      { color: #d9c3a1; }
-.violet   { color: #COLO9; }
+.violet   { color: #f29933; }
 .yellow   { color: #94c3db; }
 
 /* -------------------------------------------------------------------
