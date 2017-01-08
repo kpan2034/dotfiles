@@ -5,7 +5,7 @@ import sys
 focused_ws = "  <span foreground='#cccdd2'> %s </span>  "
 urgent_ws = "  <span foreground='#ff0000'> %s </span>  "
 
-unfocused_ws = "  <span foreground='#2f3e46'> %s </span>  "
+unfocused_ws = "  <span foreground='#56442b'> %s </span>  "
 
 
 def buildWorkspaceLine(workspaces):

@@ -34,7 +34,7 @@ h3 {
 a, a:visited {
   display: block;
   padding-top: 2px;
-  color: #COLOR5;
+  color: #a0996d;
   font-weight: bold;
   text-decoration: none;
 }
@@ -44,14 +44,14 @@ a:hover { color: #COLOR7; }
   COLOURS
 ---------------------------------------------------------------------- */
 
-.blue     { color: #COLOR2; }
-.cyan     { color: #COLOR4; }
-.green    { color: #COLOR3; }
-.magenta  { color: #COLOR6; }
-.orange   { color: #COLORX12; }
-.red      { color: #COLORX14; }
-.violet   { color: #COLOR9; }
-.yellow   { color: #COLORX10; }
+.blue     { color: #COLOR4; }
+.cyan     { color: #COLOR9; }
+.green    { color: #COLORX13; }
+.magenta  { color: #COLOR3; }
+.orange   { color: #COLORX10; }
+.red      { color: #COLOR5; }
+.violet   { color: #COLOR8; }
+.yellow   { color: #COLORX11; }
 
 /* -------------------------------------------------------------------
   LAYOUT
@@ -109,7 +109,7 @@ input 	{
   width: 64%;
   background: none;
   border: none;
-  color: #COLOR2;
+  color: #COLOR1;
   font-size: 1em;
   font-family: "envy_code", monospace;
   font-weight: bold; 

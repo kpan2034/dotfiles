@@ -4,7 +4,7 @@ gtk-color-scheme = "bg_color:#16242d
 fg_color:#fff
 base_color:#0c1419
 text_color:#fff
-selected_bg_color:#536e7c
+selected_bg_color:#856842
 selected_fg_color:#FFFFFF
 tooltip_bg_color:#16242d
 tooltip_fg_color:#fff

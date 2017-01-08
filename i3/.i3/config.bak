@@ -130,10 +130,6 @@ set $tag3 ""
 set $tag4 ""
 set $tag5 ""
 
-set $tag3 ""
-set $tag4 ""
-set $tag5 ""
-
 
 # switch to workspace
 bindsym $mod+1 workspace $tag1
@@ -243,16 +239,11 @@ smart_borders on
 
 
 # executions
-#exec xcompmgr -c -f -n
 exec --no-startup-id nitrogen --restore
 exec xrdb -load ~/.Xresources
 exec compton
-#exec --no-startup-id i3-msg 'workspace $tag3; exec startchat'
-#exec --no-startup-id banshee
-#exec --no-startup-id startchat
 exec xautolock -time 2 -locker lock &
-#exec yabar -c ~/.i3/yabar.conf
-exec pkill yabar && yabar -c ~/.i3/yabar.conf
+exec yabar -c ~/.i3/yabar.conf
 exec killall -q xfce4-notifyd
 
 # cycle workspaces

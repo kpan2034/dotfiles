@@ -50,13 +50,13 @@ font pango: envypn 9
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec xfce4-terminal
+bindsym $mod+Return exec urxvt
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # lock the screen
-bindsym $mod+Ctrl+l exec lock -f Envy-Code-R -t "Enter your password" -- maim
+bindsym $mod+Ctrl+l exec lock
 
 # start rofi (an alternative to dmenu)
 bindsym $mod+d exec "rofi -show run"
@@ -124,7 +124,7 @@ bindsym $mod+a focus parent
 
 
 # Name the workspaces
-set $tag1 ""
+set $tag1 ""
 set $tag2 ""
 set $tag3 ""
 set $tag4 ""
@@ -188,49 +188,12 @@ for_window [class="Firefox"] border pixel 1
 
 bindsym $mod+r mode "resize"
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-
-#bar {
-#	i3bar_command i3bar -t
-#    status_command i3blocks
-#   height 20
-#    font xft: Consolas 8
-#    tray_output eDP1
-#
-#    tray_output LVDS-0
-#    tray_padding 2
-#    separator_symbol "|"
-#colors {
-#       # Whole color settings
-#        background #00000088
-#        statusline #00ffff
-#        separator  #ff0000
-
-#        # Type             border  background font
-#
-#      focused_workspace  #00ffff #00ffff #111111
-#
-#        focused_workspace  #00ffff #00ffff #111111
-#
-#        active_workspace   #333333 #5f676a #000000
-#        inactive_workspace #000000 #00000088 #00ffff
-#        urgent_workspace   #aa0000 #990000 #ffffff
-#    }
-#    # i3bar position
-#    position top
-#}
-
-#bar {
-#        i3bar_command ~/.i3/lemonbar/i3_lemonbar.py
-#}
-
 # Window Colors
 # class                 border  backgr. text
 client.focused          #COLOR1 #COLOR1 #COLOR0
-client.focused_inactive #333333 #222222 #ffffff
+client.focused_inactive #COLOR2 #COLOR2 #COLOR0
 client.unfocused        #COLOR0 #COLOR0 #COLOR1
-client.urgent           #2f343a #900000 #ffffff
+client.urgent           #900000 #COLOR1 #900000
 
 smart_gaps on
 gaps inner 13
@@ -239,14 +202,13 @@ smart_borders on
 
 
 # executions
-
 exec --no-startup-id nitrogen --restore
 exec xrdb -load ~/.Xresources
 exec compton
-
-exec xautolock -time 2 -locker "lock -f Envy-Code-R -t "Enter your password" -- maim" &
+exec xautolock -time 2 -locker lock &
 exec yabar -c ~/.i3/yabar.conf
 exec killall -q xfce4-notifyd
+exec dunst -conf ~/.i3/dunstrc & 
 
 # cycle workspaces
 bindsym $mod+Tab workspace back_and_forth
