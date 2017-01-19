@@ -17,7 +17,7 @@ set $mod Mod4
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango: envypn 9
+font pango: Dina 8
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -27,36 +27,18 @@ font pango: envypn 9
 # font, it doesn’t scale on retina/hidpi displays.
 
 
-#set $system_power_mode "(s)hutdown, (r)eboot or (l)ogout "
-
-# system/power menu
-#mode $system_power_mode {
-#  # dvorak equivalents
-#  bindsym o exec systemctl poweroff
-#  bindsym p exec systemctl reboot
-
-#  # qwerty
-#  bindsym s exec systemctl poweroff
-#  bindsym r exec systemctl reboot
-#  bindsym l exec i3-msg exit
-
-#  bindsym Escape mode "default"
-#}
-
-#bindsym $mod+Shift+Delete mode $system_power_mode
-
-
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec urxvt
+for_window [class="URxvt"] floating enable
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # lock the screen
-bindsym $mod+Ctrl+l exec lock
+bindsym $mod+Ctrl+l exec "lock -f Envy-Code-R"
 
 # start rofi (an alternative to dmenu)
 bindsym $mod+d exec "rofi -show run"
@@ -68,9 +50,6 @@ bindsym $mod+d exec "rofi -show run"
 
 # disable title bar
 new_window pixel 3
-
-# if using XFCE, uncomment this
-bindsym $mod+Shift+Delete exec yabar -c ~/.i3/poweroff.conf
 
 # change focus
 bindsym $mod+j focus left
@@ -190,10 +169,10 @@ bindsym $mod+r mode "resize"
 
 # Window Colors
 # class                 border  backgr. text
-client.focused          #a06522 #a06522 #101a20
-client.focused_inactive #6c8ea0 #6c8ea0 #101a20
-client.unfocused        #101a20 #101a20 #a06522
-client.urgent           #900000 #a06522 #900000
+client.focused          #8aa079 #8aa079 #0b1c20
+client.focused_inactive #a08e58 #a08e58 #0b1c20
+client.unfocused        #0b1c20 #0b1c20 #8aa079
+client.urgent           #900000 #8aa079 #900000
 
 smart_gaps on
 gaps inner 13
@@ -202,13 +181,13 @@ smart_borders on
 
 
 # executions
-exec --no-startup-id nitrogen --restore
 exec xrdb -load ~/.Xresources
-exec compton
+exec compton &
 exec xautolock -time 2 -locker lock &
-exec yabar -c ~/.i3/yabar.conf
+exec polybar top -c ~/polybarconf &
 exec killall -q xfce4-notifyd
 exec dunst -conf ~/.i3/dunstrc & 
+exec wpg -s n5dwes8p09k-mikael-kristenson.jpg
 
 # cycle workspaces
 bindsym $mod+Tab workspace back_and_forth

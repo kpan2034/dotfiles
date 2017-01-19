@@ -36,7 +36,7 @@ rofi.yoffset: 26
    URxvt.color15:  #COLORX15
 
    URxvt.background: #COLOR0
-   URxvt.foreground: #COLOR2
+   URxvt.foreground: #COLORX15
 
    URxvt.font: xft:Dina:size=8
    URxvt.scrollBar: false

@@ -2,8 +2,8 @@
 ! ROFI Color theme
 ! ------------------------------------------------------------------------------
 rofi.color-enabled: true
-rofi.color-window: #101a20, #a06522, #a06522
-rofi.color-normal: argb:0000000, #a06522, argb:0000000, #a06522, #1b2b34
+rofi.color-window: #0b1c20, #8aa079, #8aa079
+rofi.color-normal: argb:0000000, #8aa079, argb:0000000, #8aa079, #1b2b34
 rofi.color-active: argb:0000000, #6699cc, argb:0000000, #6699cc, #1b2b34
 rofi.color-urgent: argb:0000000, #e12a36, argb:0000000, #dd2a4b, #1b2b34
 rofi.font: Dina 8
@@ -17,26 +17,26 @@ rofi.yoffset: 26
 ! Urxvt Config
 ! -------------------------------------------------------------------------------
 
-   URxvt.color0:   #101a20
-   URxvt.color1:   #a06522
-   URxvt.color2:   #6c8ea0
-   URxvt.color3:   #a06f36
-   URxvt.color4:   #a07e50
-   URxvt.color5:   #8e98a0
-   URxvt.color6:   #a09077
-   URxvt.color7:   #9b9ca0
+   URxvt.color0:   #0b1c20
+   URxvt.color1:   #8aa079
+   URxvt.color2:   #a08e58
+   URxvt.color3:   #4da098
+   URxvt.color4:   #a09a6d
+   URxvt.color5:   #a07733
+   URxvt.color6:   #a08c5d
+   URxvt.color7:   #6ea091
 
-   URxvt.color8:   #305063
-   URxvt.color9:   #f29933
-   URxvt.color10:  #94c3db
-   URxvt.color11:  #eba24f
-   URxvt.color12:  #e2b271
-   URxvt.color13:  #bdcad5
-   URxvt.color14:  #d9c3a1
-   URxvt.color15:  #cccdd2
+   URxvt.color8:   #235d6b
+   URxvt.color9:   #bbd8a4
+   URxvt.color10:  #e0c77b
+   URxvt.color11:  #6de3d8
+   URxvt.color12:  #dbd395
+   URxvt.color13:  #ecaf4a
+   URxvt.color14:  #dfc381
+   URxvt.color15:  #96dbc6
 
-   URxvt.background: #101a20
-   URxvt.foreground: #6c8ea0
+   URxvt.background: #0b1c20
+   URxvt.foreground: #96dbc6
 
    URxvt.font: xft:Dina:size=8
    URxvt.scrollBar: false

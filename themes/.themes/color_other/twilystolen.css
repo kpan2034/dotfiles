@@ -18,8 +18,8 @@
 
 :root {
     /* TAB VARIABLES */
-    --bg-light: #a06522; --bg-dark: #101a20;
-    --fg-light: #101a20; --fg-dark: #a06522;
+    --bg-light: #8aa079; --bg-dark: #0b1c20;
+    --fg-light: #0b1c20; --fg-dark: #8aa079;
     --tab-triangle-correction: -1px;
     --tab-height: 24px; --tab-icon-size: 16px; --tab-strip-margin: -12px; --tab-overlap: -5px;
     --tab-fonts: "Envy Code R"; --tab-font-size: 10pt;
