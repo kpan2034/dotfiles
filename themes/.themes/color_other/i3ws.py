@@ -2,10 +2,10 @@
 import i3ipc
 import sys
 
-focused_ws = "  <span foreground='#96dbc6'> %s </span>  "
+focused_ws = "  <span foreground='#dadee0'> %s </span>  "
 urgent_ws = "  <span foreground='#ff0000'> %s </span>  "
 
-unfocused_ws = "  <span foreground='#464430'> %s </span>  "
+unfocused_ws = "  <span foreground='#583147'> %s </span>  "
 
 
 def buildWorkspaceLine(workspaces):

@@ -70,6 +70,7 @@ format-background = #COLOR0
 type = internal/i3
 strip-wsnumbers = true
 enable-click = false
+index-sort = true
 format = <label-state>
 
 label-focused = 
