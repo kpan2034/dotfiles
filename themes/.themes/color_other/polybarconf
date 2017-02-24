@@ -1,3 +1,11 @@
+;=====================================================
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/jaagr/polybar
+;
+;   The README contains alot of information
+;
+;=====================================================
 
 [global/wm]
 margin-top = 5
@@ -12,8 +20,8 @@ offset-y = 0
 
 locale = de_DE.UTF-8
 
-background = #202020
-foreground = #375fa0
+background = #111111
+foreground = #94a086
 
 font-0 = Dina:size=9;
 font-1 = FontAwesome:size=10;0
@@ -24,7 +32,7 @@ modules-right = volume powermenu
 
 tray-position = right
 tray-padding = 2
-tray-background = #506ea0
+tray-background = #a08c50
 tray-transparent = false
 tray-detached = false
 
@@ -45,8 +53,8 @@ ramp-volume-0 = 
 ramp-volume-1 =  
 ramp-volume-2 = 
 
-format-volume-foreground = #375fa0
-format-volume-background = #202020
+format-volume-foreground = #94a086
+format-volume-background = #111111
 
 label-muted = 🔇muted
 
@@ -56,7 +64,7 @@ type = internal/xwindow
 label = %title:0:30:...%
 module-margin-left = 2
 format-padding = 2
-format-background = #202020
+format-background = #111111
 
 [module/i3]
 type = internal/i3
@@ -66,18 +74,18 @@ index-sort = true
 format = <label-state>
 
 label-focused = 
-label-focused-foreground = #506ea0
-label-focused-background = #202020
+label-focused-foreground = #a08c50
+label-focused-background = #111111
 label-focused-padding = 1
 
 label-unfocused = 
-label-unfocused-foreground = #506ea0
-label-unfocused-background = #202020
+label-unfocused-foreground = #a08c50
+label-unfocused-background = #111111
 label-unfocused-padding = 1
 
 label-urgent = 
 label-urgent-foreground = #900000
-label-urgent-background = #506ea0 
+label-urgent-background = #a08c50 
 label-urgent-padding = 1
 
 [module/date]
@@ -87,21 +95,21 @@ date = " %A, %d %B  %H:%M"
 
 ;format = %date% 
 ;format-padding = 1
-;format-background = #a05881
-;format-foreground = #375fa0
+;format-background = #7aa04b
+;format-foreground = #94a086
 
 [module/powermenu]
 type = custom/menu
 
 label-open =  power
-label-open-foreground = #a05881
-label-open-background = #202020
+label-open-foreground = #7aa04b
+label-open-background = #111111
 label-close =  cancel
-label-close-foreground = #a05881
-label-close-background = #202020
+label-close-foreground = #7aa04b
+label-close-background = #111111
 label-separator = |
-label-separator-foreground = #506ea0
-label-separator-background = #202020
+label-separator-foreground = #a08c50
+label-separator-background = #111111
 
 menu-0-0 = reboot
 menu-0-0-exec = menu-open-1

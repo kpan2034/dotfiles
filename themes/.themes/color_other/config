@@ -169,10 +169,10 @@ bindsym $mod+r mode "resize"
 
 # Window Colors
 # class                 border  backgr. text
-client.focused          #9083a0 #9083a0 #202020
-client.focused_inactive #506ea0 #506ea0 #202020
-client.unfocused        #202020 #202020 #9083a0
-client.urgent           #900000 #9083a0 #900000
+client.focused          #6ca05a #6ca05a #111111
+client.focused_inactive #a08c50 #a08c50 #111111
+client.unfocused        #111111 #111111 #6ca05a
+client.urgent           #900000 #6ca05a #900000
 
 smart_gaps on
 gaps inner 13
@@ -187,7 +187,7 @@ exec xautolock -time 2 -locker lock &
 exec polybar top -c ~/polybarconf &
 exec killall -q xfce4-notifyd
 exec dunst -conf ~/.i3/dunstrc & 
-exec wpg -s n5dwes8p09k-mikael-kristenson.jpg
+exec wpg -s floweryhouse.jpg
 
 # cycle workspaces
 bindsym $mod+Tab workspace back_and_forth

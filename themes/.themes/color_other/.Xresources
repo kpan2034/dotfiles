@@ -2,8 +2,8 @@
 ! ROFI Color theme
 ! ------------------------------------------------------------------------------
 rofi.color-enabled: true
-rofi.color-window: #202020, #9083a0, #9083a0
-rofi.color-normal: argb:0000000, #9083a0, argb:0000000, #9083a0, #1b2b34
+rofi.color-window: #111111, #6ca05a, #6ca05a
+rofi.color-normal: argb:0000000, #6ca05a, argb:0000000, #6ca05a, #1b2b34
 rofi.color-active: argb:0000000, #6699cc, argb:0000000, #6699cc, #1b2b34
 rofi.color-urgent: argb:0000000, #e12a36, argb:0000000, #dd2a4b, #1b2b34
 rofi.font: Dina 8
@@ -17,31 +17,31 @@ rofi.yoffset: 26
 ! Urxvt Config
 ! -------------------------------------------------------------------------------
 
-   URxvt.color0:   #202020
-   URxvt.color1:   #9083a0
-   URxvt.color2:   #506ea0
-   URxvt.color3:   #a05881
-   URxvt.color4:   #375fa0
-   URxvt.color5:   #8a76a0
-   URxvt.color6:   #3363a0
-   URxvt.color7:   #a03670
+   URxvt.color0:   #111111
+   URxvt.color1:   #6ca05a
+   URxvt.color2:   #a08c50
+   URxvt.color3:   #7aa04b
+   URxvt.color4:   #94a086
+   URxvt.color5:   #73a038
+   URxvt.color6:   #a08259
+   URxvt.color7:   #84a031
 
-   URxvt.color8:   #805e7d
-   URxvt.color9:   #4783c8
-   URxvt.color10:  #c84e8a
-   URxvt.color11:  #99a6c8
-   URxvt.color12:  #59bbdc
-   URxvt.color13:  #cab2c2
-   URxvt.color14:  #87cde0
-   URxvt.color15:  #dadee0
+   URxvt.color8:   #807e6e
+   URxvt.color9:   #c89361
+   URxvt.color10:  #c6c8bf
+   URxvt.color11:  #c8bcac
+   URxvt.color12:  #6890c8
+   URxvt.color13:  #c8c3b7
+   URxvt.color14:  #a3bde0
+   URxvt.color15:  #d0d6e0
 
-   URxvt.background: #202020
-   URxvt.foreground: #dadee0
+   URxvt.background: #111111
+   URxvt.foreground: #d0d6e0
 
    URxvt.font: xft:Dina:size=8
    URxvt.scrollBar: false
    URxvt.cursorBlink: true
-   URxvt.internalBorder: 24
+   URxvt.internalBorder: 30
    URxvt.perl-ext: default,matcher
    URxvt.matcher.button: 1
    URxvt.url-launcher: /usr/bin/firefox

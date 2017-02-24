@@ -187,7 +187,7 @@ exec xautolock -time 2 -locker lock &
 exec polybar top -c ~/polybarconf &
 exec killall -q xfce4-notifyd
 exec dunst -conf ~/.i3/dunstrc & 
-exec wpg -s n5dwes8p09k-mikael-kristenson.jpg
+exec wpg -s floweryhouse.jpg
 
 # cycle workspaces
 bindsym $mod+Tab workspace back_and_forth

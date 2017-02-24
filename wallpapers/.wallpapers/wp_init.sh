@@ -1,2 +1,2 @@
 #!/bin/bash
-wpcscript change mr-robot-8k-hd.jpg && xrdb -merge /home/icyphox/.wallpapers/.mr-robot-8k-hd.jpg.Xres
+wpcscript change floweryhouse.jpg && xrdb -merge /home/icyphox/.wallpapers/.floweryhouse.jpg.Xres

@@ -19,8 +19,8 @@ h3 {
 }
 
 body {
-  background-color: #202020;
-  color: #9083a0;
+  background-color: #111111;
+  color: #6ca05a;
   font-family: "envy_code", monospace;
   font-size: 15px;
 }
@@ -34,24 +34,24 @@ h3 {
 a, a:visited {
   display: block;
   padding-top: 2px;
-  color: #a05881;
+  color: #7aa04b;
   font-weight: bold;
   text-decoration: none;
 }
-a:hover { color: #a03670; }
+a:hover { color: #84a031; }
 
 /* -------------------------------------------------------------------
   COLOURS
 ---------------------------------------------------------------------- */
 
-.blue     { color: #375fa0; }
-.cyan     { color: #4783c8; }
-.green    { color: #cab2c2; }
-.magenta  { color: #a05881; }
-.orange   { color: #c84e8a; }
-.red      { color: #8a76a0; }
-.violet   { color: #805e7d; }
-.yellow   { color: #99a6c8; }
+.blue     { color: #94a086; }
+.cyan     { color: #c89361; }
+.green    { color: #c8c3b7; }
+.magenta  { color: #7aa04b; }
+.orange   { color: #c6c8bf; }
+.red      { color: #73a038; }
+.violet   { color: #807e6e; }
+.yellow   { color: #c8bcac; }
 
 /* -------------------------------------------------------------------
   LAYOUT
@@ -71,8 +71,8 @@ a:hover { color: #a03670; }
 #searchbox {
   margin: 4px;
   padding: 8px;
-  background-color: #202020;
-  border: 5px solid #202020;
+  background-color: #111111;
+  border: 5px solid #111111;
   -webkit-box-shadow: 1px 1px 10px 0px #000;
      -moz-box-shadow: 1px 1px 10px 0px #000;
           box-shadow: 1px 1px 10px 0px #000;
@@ -89,8 +89,8 @@ a:hover { color: #a03670; }
   -moz-box-flex: 1;
   margin: 4px;
   padding: 8px;
-  background-color: #202020;
-  border: 5px solid #202020;
+  background-color: #111111;
+  border: 5px solid #111111;
   -webkit-box-shadow: 1px 1px 10px 0px #000;
      -moz-box-shadow: 1px 1px 10px 0px #000;
           box-shadow: 1px 1px 10px 0px #000;
@@ -109,7 +109,7 @@ input 	{
   width: 64%;
   background: none;
   border: none;
-  color: #9083a0;
+  color: #6ca05a;
   font-size: 1em;
   font-family: "envy_code", monospace;
   font-weight: bold; 
