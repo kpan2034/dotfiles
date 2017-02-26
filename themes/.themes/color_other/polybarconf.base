@@ -21,7 +21,7 @@ offset-y = 0
 locale = de_DE.UTF-8
 
 background = #COLOR0
-foreground = #COLOR4
+foreground = #COLOR1
 
 font-0 = Dina:size=9;
 font-1 = FontAwesome:size=10;0
@@ -32,7 +32,7 @@ modules-right = volume powermenu
 
 tray-position = right
 tray-padding = 2
-tray-background = #COLOR2
+tray-background = #COLOR0
 tray-transparent = false
 tray-detached = false
 
@@ -53,7 +53,7 @@ ramp-volume-0 = 
 ramp-volume-1 =  
 ramp-volume-2 = 
 
-format-volume-foreground = #COLOR4
+format-volume-foreground = #COLOR1
 format-volume-background = #COLOR0
 
 label-muted = 🔇muted

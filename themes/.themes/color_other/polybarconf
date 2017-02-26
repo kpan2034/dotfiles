@@ -20,8 +20,8 @@ offset-y = 0
 
 locale = de_DE.UTF-8
 
-background = #111111
-foreground = #94a086
+background = #222222
+foreground = #00ffff
 
 font-0 = Dina:size=9;
 font-1 = FontAwesome:size=10;0
@@ -32,7 +32,7 @@ modules-right = volume powermenu
 
 tray-position = right
 tray-padding = 2
-tray-background = #a08c50
+tray-background = #222222
 tray-transparent = false
 tray-detached = false
 
@@ -53,8 +53,8 @@ ramp-volume-0 = 
 ramp-volume-1 =  
 ramp-volume-2 = 
 
-format-volume-foreground = #94a086
-format-volume-background = #111111
+format-volume-foreground = #00ffff
+format-volume-background = #222222
 
 label-muted = 🔇muted
 
@@ -64,7 +64,7 @@ type = internal/xwindow
 label = %title:0:30:...%
 module-margin-left = 2
 format-padding = 2
-format-background = #111111
+format-background = #222222
 
 [module/i3]
 type = internal/i3
@@ -74,18 +74,18 @@ index-sort = true
 format = <label-state>
 
 label-focused = 
-label-focused-foreground = #a08c50
-label-focused-background = #111111
+label-focused-foreground = #0bbfbf
+label-focused-background = #222222
 label-focused-padding = 1
 
 label-unfocused = 
-label-unfocused-foreground = #a08c50
-label-unfocused-background = #111111
+label-unfocused-foreground = #0bbfbf
+label-unfocused-background = #222222
 label-unfocused-padding = 1
 
 label-urgent = 
 label-urgent-foreground = #900000
-label-urgent-background = #a08c50 
+label-urgent-background = #0bbfbf 
 label-urgent-padding = 1
 
 [module/date]
@@ -95,21 +95,21 @@ date = " %A, %d %B  %H:%M"
 
 ;format = %date% 
 ;format-padding = 1
-;format-background = #7aa04b
-;format-foreground = #94a086
+;format-background = #73ecec
+;format-foreground = #075859
 
 [module/powermenu]
 type = custom/menu
 
 label-open =  power
-label-open-foreground = #7aa04b
-label-open-background = #111111
+label-open-foreground = #73ecec
+label-open-background = #222222
 label-close =  cancel
-label-close-foreground = #7aa04b
-label-close-background = #111111
+label-close-foreground = #73ecec
+label-close-background = #222222
 label-separator = |
-label-separator-foreground = #a08c50
-label-separator-background = #111111
+label-separator-foreground = #0bbfbf
+label-separator-background = #222222
 
 menu-0-0 = reboot
 menu-0-0-exec = menu-open-1
