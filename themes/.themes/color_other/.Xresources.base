@@ -10,9 +10,10 @@ rofi.font: Dina 8
 rofi.separator-style: none
 rofi.hide-scrollbar: true
 rofi.location: 2
-rofi.width: 640
+rofi.width: 1920
 rofi.lines: 8
 rofi.yoffset: 26
+rofi.padding: 770
 
 ! Urxvt Config
 ! -------------------------------------------------------------------------------

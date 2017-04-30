@@ -151,8 +151,8 @@
     browser = /usr/bin/firefox -new-tab
 
     # Align icons left/right/off
-    icon_position = left
     icon_position = off
+   
 
     # Paths to default icons.
     icon_folders = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
@@ -160,7 +160,7 @@
 [frame]
     width = 1
     width = 2
-    color = "#00ffff"
+    color = "#222222"
 
 [shortcuts]
 
@@ -173,7 +173,7 @@
     close = ctrl+space
 
     # Close all notifications.
-    close_all = ctrl+shift+space
+    close_all = alt+shift+space
 
     # Redisplay last message(s).
     # On the US keyboard layout "grave" is normally above TAB and left
